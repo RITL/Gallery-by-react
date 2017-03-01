@@ -51,3 +51,8 @@ npm install autoprefixer-loader -save -dev
  修改`styles/App.css`的后缀为`scss`
  
  修改`src/components/Main/.js`中的`require('styles/App.scss');`
+ 
+ 安装json-loader
+ ```
+ npm install --save-dev json-loader
+ ```
