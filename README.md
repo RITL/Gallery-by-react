@@ -25,3 +25,7 @@ npm ls -g --repth-1 2>/dev/null | grep generator- //查看webpack的版本
 //当前目录初始化react项目
 RITL-2:Gallery-by-react yuewen$ yo react-webpack Gallery-by-react
  ```
+ 
+ ```
+ npm start  开启
+ ```
