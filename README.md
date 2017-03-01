@@ -29,3 +29,25 @@ RITL-2:Gallery-by-react yuewen$ yo react-webpack Gallery-by-react
  ```
  npm start  //开启
  ```
+ 
+ 添加autoprefixer-loader
+ ```
+npm install autoprefixer-loader -save -dev
+ ```
+ 
+ 修改配置文件`cfg/defaults.js`
+ ```
+{
+  test: /\.scss/,
+  loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
+},
+      
+{
+  test: /\.css$/,
+  loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
+},
+ ```
+ 
+ 修改`styles/App.css`的后缀为`scss`
+ 
+ 修改`src/components/Main/.js`中的`require('styles/App.scss');`
