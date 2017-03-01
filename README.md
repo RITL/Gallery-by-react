@@ -27,5 +27,5 @@ RITL-2:Gallery-by-react yuewen$ yo react-webpack Gallery-by-react
  ```
  
  ```
- npm start  开启
+ npm start  //开启
  ```
